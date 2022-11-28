@@ -1,0 +1,39 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 01fr);
+    padding-top: 2vw; 
+    padding-bottom: 2vw; 
+    padding-left: 12vw; 
+    padding-right: 12vw; 
+    
+   
+    justify-content: right;
+    background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+}
+
+.main{
+    background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+}
+
+.Card{
+    padding-bottom: 1vw;
+}
+
+
+.text h1{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin-top: -1vw ;
+    padding-top: 5vw;
+    padding-left: 8vw;
+    font-weight: 60;
+    font-size: 4.5vw;
+}
+
+.parr h3{
+    color: white;
+    font-size: 2vw;
+    padding-left: 8vw;
+    font-weight: 6;
+    line-height : 2vw
+}
