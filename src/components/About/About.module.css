@@ -2,8 +2,7 @@
 .main{
     background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
     background-size: cover;
-    position: relative;
-    height: 100vh;
+    position: absolute;
     top:0px;
     right:0px;
     bottom:0px;
@@ -25,13 +24,9 @@
 
 
   .text{
-    background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
     display: block;
     font-size: 1.5vw;
     position: relative;
-    padding-left: 40%;
-    padding-right: 10vw;
-    padding-top: 7vh;
     height: 100vh;
   }
 
