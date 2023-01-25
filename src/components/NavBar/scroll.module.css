@@ -5,7 +5,7 @@
 padding-left: 43%;
 }
 .btn {
-  padding: 0.9em 1.6em;
+  /* padding: 0.9em 1.6em; */
   border: none;
   outline: none;
   color: #FFF;
@@ -15,7 +15,7 @@ padding-left: 43%;
   cursor: pointer;
   position: absolute;
   z-index: 0;
-  border-radius: 12px;
+
   align-items: center;
   display: inline-block;
  }

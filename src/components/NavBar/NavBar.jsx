@@ -22,7 +22,12 @@ const NavBar = () => {
 
   return (
     <AppBar
-      sx={{ background: "#000000", boxShadow: "none", position: "sticky" }}
+      sx={{
+        background: "#000000",
+        boxShadow: "none",
+        position: "sticky",
+        overflow: "hidden",
+      }}
     >
       <Toolbar>
         <TerminalIcon />

@@ -11,7 +11,7 @@ import SkillsENG from "./components/Skills/SkillsENG";
 import Proyectos from "./components/Projects/Proyectos";
 import ProyectosENG from "./components/Projects/ProyectoaENG";
 import { Box } from "@mui/material";
-
+import Contact from "./components/contact/contact";
 function App() {
   const StateButton = useSelector((state) => state.traduction);
   return (
@@ -22,13 +22,8 @@ function App() {
         {!StateButton ? <About /> : <AboutENG />}
         {!StateButton ? <SkillsESP /> : <SkillsENG />}
         {!StateButton ? <Proyectos /> : <ProyectosENG />}
+        {!StateButton && <Contact />}
       </Box>
-      <Routes>
-        <Route
-          path="/goToGoogle"
-          render={() => (window.location = "https://www.google.com")}
-        />
-      </Routes>
     </BrowserRouter>
   );
 }

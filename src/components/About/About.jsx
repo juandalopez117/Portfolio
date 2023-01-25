@@ -24,7 +24,7 @@ const About = () => {
                 display: "flex",
                 textAlign: "center",
                 justifyContent: "center",
-                translate: "0vh 8vh",
+                translate: "0vh 4vh",
                 width: "90%",
                 padding: "2% 5%",
               }}
