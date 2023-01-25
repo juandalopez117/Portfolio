@@ -2,10 +2,11 @@ import emailjs from "@emailjs/browser";
 
 const sendEmail = ({ name, email, subject, message }) => {
   let templateParams = {
-    to_email: email,
+    from_email: email,
     from_name: name,
+    to_email: "juandalopez117@gmail.com",
     subject: subject,
-    message: message,
+    message: message + "\n" + email,
   };
   emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID);
 
