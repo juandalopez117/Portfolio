@@ -61,7 +61,7 @@ export default function Cards({
           avatar={<TerminalSharpIcon />}
           title={title}
           subheader={
-            <Typography sx={{ mb: 1 }} color="white" fontSize="1vw">
+            <Typography sx={{ mb: 1 }} color="white" fontSize="2vw">
               {date}
             </Typography>
           }

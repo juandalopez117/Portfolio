@@ -10,6 +10,7 @@ import SourceIcon from "@mui/icons-material/Source";
 import ListItemText from "@mui/material/ListItemText";
 import portfolio from "./portfolio.png";
 import ExOtaku from "./ExOtaku.png";
+import Anime from "./Anime.png";
 import ACO from "./ACO.png";
 import { Box, Grid } from "@mui/material";
 const Proyectos = () => {
@@ -353,6 +354,74 @@ const Proyectos = () => {
                     }
                     github="https://github.com/Santirbe98/PF-ExoOtaku"
                     deploy="https://pf-exo-otaku.vercel.app/"
+                  />
+                </Box>
+              </Grid>
+
+              <Grid item>
+                <Box>
+                  <Cards
+                    title="Anime App"
+                    date="Enero 2023"
+                    image={Anime}
+                    generalIdeas="Pequeña SPA que renderiza una serie de cards mediante información consumida de la API Jikan. Cuenta con bases de datos, detalles en cada 
+                    tarjeta, pequeño carrusel y buscador. Funciona de manera responsive"
+                    ListOftechnologies={
+                      <List>
+                        <Typography> Backend </Typography>
+                        <ListItem sx={{ marginTop: "0.1%" }}>
+                          <ListItemAvatar>
+                            <SourceIcon sx={{ padding: "2%" }} />
+                          </ListItemAvatar>
+                          <ListItemText primary="Express" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <SourceIcon sx={{ padding: "2%" }} />
+                          </ListItemAvatar>
+                          <ListItemText primary="Node.js" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <SourceIcon sx={{ padding: "2%" }} />
+                          </ListItemAvatar>
+                          <ListItemText primary="Sequelize" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <SourceIcon sx={{ padding: "0%" }} />
+                          </ListItemAvatar>
+                          <ListItemText primary="PostgreSQL" />
+                        </ListItem>
+
+                        <Typography> Frontend</Typography>
+                        <ListItem sx={{ marginTop: "0.1%" }}>
+                          <ListItemAvatar>
+                            <SourceIcon sx={{ padding: "2%" }} />
+                          </ListItemAvatar>
+                          <ListItemText primary="React" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <SourceIcon sx={{ padding: "2%" }} />
+                          </ListItemAvatar>
+                          <ListItemText primary="JavaScript" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <SourceIcon sx={{ padding: "0%" }} />
+                          </ListItemAvatar>
+                          <ListItemText primary="CSS" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <SourceIcon sx={{ padding: "0%" }} />
+                          </ListItemAvatar>
+                          <ListItemText primary="Material UI" />
+                        </ListItem>
+                      </List>
+                    }
+                    github="https://github.com/juandalopez117/proyecto-anime"
                   />
                 </Box>
               </Grid>

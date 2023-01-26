@@ -74,8 +74,8 @@ const ContactENG = () => {
         </Typography>
         <Box
           sx={{
-            padding: "5% 10%",
-            margin: "0rem 15rem",
+            padding: "5% 5%",
+            margin: "0% 20%",
             display: "block",
             textAlign: "center",
             alignContent: "center",

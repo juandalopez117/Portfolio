@@ -54,7 +54,7 @@ const Contact = () => {
         paddingBottom: "5%",
       }}
     >
-      <Box sx={{ bgcolor: "black", color: "white", padding: "4%" }}>
+      <Box sx={{ bgcolor: "black", color: "white", padding: "1%" }}>
         <Typography variant="h2"> Contacto </Typography>
       </Box>
 
@@ -73,8 +73,8 @@ const Contact = () => {
         </Typography>
         <Box
           sx={{
-            padding: "5% 10%",
-            margin: "0rem 15rem",
+            padding: "5% 5%",
+            margin: "0% 20%",
             display: "block",
             textAlign: "center",
             alignContent: "center",
