@@ -74,7 +74,7 @@ const Contact = () => {
         <Box
           sx={{
             padding: "5% 10%",
-            margin: "0% 10%",
+            margin: "0% 15rem",
             display: "block",
             textAlign: "center",
             alignContent: "center",
