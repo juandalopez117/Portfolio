@@ -28,7 +28,7 @@ const Proyectos = () => {
       </Box>
       <Box>
         <Box sx={{ padding: "5%", color: "white" }}>
-          <Typography variant="h4">
+          <Typography variant="h5">
             I have participated and created the following projects
           </Typography>
           <Box sx={{ padding: "3% 0%" }}>

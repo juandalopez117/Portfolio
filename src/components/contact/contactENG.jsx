@@ -68,9 +68,7 @@ const ContactENG = () => {
         <Typography variant="h5" sx={{ padding: "4% 2%" }}>
           You can send me an email to juandalopez117@gmail.com. Also, you can
           complete this form, and i will communicate with you as soon as
-          possible Puedes contactarme al correo electrónico
-          juandalopez117@gmail.com o puedes llenar este formulario, me
-          comunicaré contigo a la mayor brevedad
+          possible.
         </Typography>
         <Box
           sx={{

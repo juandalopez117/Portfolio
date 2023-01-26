@@ -61,7 +61,7 @@ const SkillsESP = () => {
               "linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%))",
           }}
         >
-          <Typography variant="h4">
+          <Typography variant="h5">
             My formation is focused mainly in the following technologies
           </Typography>
           <Box
