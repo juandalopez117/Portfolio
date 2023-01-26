@@ -7,18 +7,31 @@ import DrawerComp from "../Drawer/DrawerComp";
 import { useMediaQuery, useTheme } from "@mui/material";
 import ExampleMaterialSwitch from "./Check";
 import { useSelector } from "react-redux";
+import { Box } from "@mui/material";
 
 const NavBar = () => {
   const StateButton = useSelector((state) => state.traduction);
   const [value, setValue] = React.useState();
   const [checked, setChecked] = React.useState(false);
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
   const pages = ["Inicio", "Sobre Mi", "Skills", "Proyectos", "Contacto"];
   const pagesENG = ["Home", "About me", "Skills", "Projects", "Contact me"];
 
-  const LinksESP = ["#HeaderESP", "#AboutESP", "#SkillsESP", "#ProyectosESP"];
-  const LinksENG = ["#HeaderENG", "#AboutENG", "#SkillsENG", "#ProyectosENG"];
+  const LinksESP = [
+    "#HeaderESP",
+    "#AboutESP",
+    "#SkillsESP",
+    "#ProyectosESP",
+    "#ContactoESP",
+  ];
+  const LinksENG = [
+    "#HeaderENG",
+    "#AboutENG",
+    "#SkillsENG",
+    "#ProyectosENG",
+    "#ContactENG",
+  ];
 
   return (
     <AppBar
@@ -32,12 +45,12 @@ const NavBar = () => {
       <Toolbar>
         <TerminalIcon />
         {isMatch ? (
-          <>
-            <Typography sx={{ marginLeft: "1%" }}>
+          <Fragment>
+            <Typography sx={{ marginLeft: "1%", overflow: "auto" }}>
               Juan David Piedrahita López
             </Typography>
             <DrawerComp />
-          </>
+          </Fragment>
         ) : (
           <>
             <Typography sx={{ marginLeft: "1%" }}>

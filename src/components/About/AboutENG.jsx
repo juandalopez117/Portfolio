@@ -23,7 +23,7 @@ const About = () => {
                 display: "flex",
                 textAlign: "center",
                 justifyContent: "center",
-                translate: "0vh 8vh",
+                translate: "0vh 4vh",
                 width: "90%",
                 padding: "2% 5%",
               }}
@@ -49,7 +49,8 @@ const About = () => {
                 variant="contained"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1ZHQhZui2cW5KOZL5J78japJxTg-r2R7M/view?usp=share_link"
+                    "https://drive.google.com/file/d/1rZ28FXHxJFqWg62GSjxNNDX4j9MORH-A/view?usp=sharing",
+                    "newTab"
                   )
                 }
               >

@@ -15,7 +15,7 @@ import { Box, Grid } from "@mui/material";
 const Proyectos = () => {
   return (
     <Box
-      id="ProyectosESP"
+      id="ProyectosENG"
       sx={{
         background:
           "linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%))",

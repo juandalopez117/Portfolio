@@ -12,6 +12,8 @@ import Proyectos from "./components/Projects/Proyectos";
 import ProyectosENG from "./components/Projects/ProyectoaENG";
 import { Box } from "@mui/material";
 import Contact from "./components/contact/contact";
+import Footer from "./components/Footer/Footer";
+import ContactENG from "./components/contact/contactENG";
 function App() {
   const StateButton = useSelector((state) => state.traduction);
   return (
@@ -22,7 +24,8 @@ function App() {
         {!StateButton ? <About /> : <AboutENG />}
         {!StateButton ? <SkillsESP /> : <SkillsENG />}
         {!StateButton ? <Proyectos /> : <ProyectosENG />}
-        {!StateButton && <Contact />}
+        {!StateButton ? <Contact /> : <ContactENG />}
+        <Footer />
       </Box>
     </BrowserRouter>
   );

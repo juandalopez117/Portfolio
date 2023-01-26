@@ -4,6 +4,7 @@ import image from "./image.jpg";
 import T from "../NavBar/scroll.module.css";
 import { Box, Typography, Grid, Button } from "@mui/material";
 import TypewriterComponent from "typewriter-effect";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Header1() {
   return (
@@ -12,7 +13,7 @@ export default function Header1() {
       sx={{
         bgcolor: "black",
         flexGrow: 2,
-        minHeight: "80vh",
+        minHeight: "100vh",
         padding: "5%",
         display: "block",
       }}
@@ -97,27 +98,29 @@ export default function Header1() {
         sx={{
           bgcolor: "black",
           padding: "0% 3%",
-          display: "flex",
+          display: "block",
           textAlign: "center",
           justifyContent: "center",
         }}
       >
-        <Button
-          variant="contained"
-          width="100%"
-          className={T.btn}
-          size="large"
-          sx={{
-            translate: "0% -50%",
-            bgcolor: "black",
-            ":hover": {
-              backgroundColor: "black",
-            },
-            padding: "1% 3%",
-          }}
-        >
-          Ver mas...
-        </Button>
+        <Link to="#AboutESP" smooth>
+          <Button
+            variant="contained"
+            width="100%"
+            className={T.btn}
+            size="large"
+            sx={{
+              translate: "0vw 0",
+              bgcolor: "black",
+              ":hover": {
+                backgroundColor: "black",
+              },
+              /* padding: "1% 3%", */
+            }}
+          >
+            Ver mas...
+          </Button>
+        </Link>
       </Box>
     </Box>
   );

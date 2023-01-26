@@ -50,7 +50,8 @@ const About = () => {
                 variant="contained"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1ZHQhZui2cW5KOZL5J78japJxTg-r2R7M/view?usp=share_link"
+                    "https://drive.google.com/file/d/1BFT-rGN7JeQrlvftEfpZjhCH6L-1AFmS/view?usp=share_link",
+                    "newTab"
                   )
                 }
               >

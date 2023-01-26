@@ -6,13 +6,12 @@ import {
   Button,
   FormHelperText,
 } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
 import T from "../NavBar/scroll.module.css";
 import { useState } from "react";
 import sendEmail from "./sendEmail";
-import SendIcon from "@mui/icons-material/Send";
-import { Validate } from "./Validate";
-
-const Contact = () => {
+import { ValidateENG } from "./ValidateENG";
+const ContactENG = () => {
   const initialState = {
     name: "",
     email: "",
@@ -30,7 +29,7 @@ const Contact = () => {
     });
 
     setErrors(
-      Validate({
+      ValidateENG({
         ...input,
         [e.target.name]: e.target.value,
       })
@@ -46,7 +45,7 @@ const Contact = () => {
 
   return (
     <Box
-      id="ContactoESP"
+      id="ContactENG"
       sx={{
         background:
           "linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%))",
@@ -55,7 +54,7 @@ const Contact = () => {
       }}
     >
       <Box sx={{ bgcolor: "black", color: "white", padding: "4%" }}>
-        <Typography variant="h2"> Contacto </Typography>
+        <Typography variant="h2"> Contact me </Typography>
       </Box>
 
       <Box
@@ -67,9 +66,11 @@ const Contact = () => {
         }}
       >
         <Typography variant="h5" sx={{ padding: "4% 2%" }}>
-          Puedes contactarme al correo electrónico juandalopez117@gmail.com o
-          puedes llenar este formulario, me comunicaré contigo a la mayor
-          brevedad
+          You can send me an email to juandalopez117@gmail.com. Also, you can
+          complete this form, and i will communicate with you as soon as
+          possible Puedes contactarme al correo electrónico
+          juandalopez117@gmail.com o puedes llenar este formulario, me
+          comunicaré contigo a la mayor brevedad
         </Typography>
         <Box
           sx={{
@@ -95,7 +96,7 @@ const Contact = () => {
               value={input.name}
               onChange={(e) => handleChange(e)}
               id="outlined-basic"
-              label="Nombre"
+              label="Name"
               variant="outlined"
               fullWidth
               sx={{
@@ -171,7 +172,7 @@ const Contact = () => {
               value={input.subject}
               onChange={(e) => handleChange(e)}
               id="outlined-basic"
-              label="Asunto"
+              label="Subject"
               variant="outlined"
               fullWidth
               sx={{
@@ -201,7 +202,7 @@ const Contact = () => {
               value={input.message}
               onChange={(e) => handleChange(e)}
               id="outlined-basic"
-              label="Mensaje"
+              label="Message"
               variant="outlined"
               fullWidth
               multiline
@@ -252,7 +253,7 @@ const Contact = () => {
               className={T.btn}
               size="large"
             >
-              Enviar <SendIcon sx={{ paddingLeft: "10%" }} />
+              Send <SendIcon sx={{ paddingLeft: "10%" }} />
             </Button>
           </Box>
         </Box>
@@ -261,4 +262,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactENG;
