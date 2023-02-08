@@ -364,8 +364,7 @@ const Proyectos = () => {
                     title="Anime App"
                     date="Enero 2023"
                     image={Anime}
-                    generalIdeas="Pequeña SPA que renderiza una serie de cards mediante información consumida de la API Jikan. Cuenta con bases de datos, detalles en cada 
-                    tarjeta, pequeño carrusel y buscador. Funciona de manera responsive"
+                    generalIdeas="SPA que renderiza cards con información  de la API Jikan. Cuenta con bases de datos, detalles, pequeño carrusel y buscador."
                     ListOftechnologies={
                       <List>
                         <Typography> Backend </Typography>

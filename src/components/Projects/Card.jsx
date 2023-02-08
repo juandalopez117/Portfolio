@@ -52,7 +52,11 @@ export default function Cards({
 
   return (
     <Card
-      sx={{ maxWidth: 345, bgcolor: "rgb(36, 36, 36)", color: "white" }}
+      sx={{
+        width: 340,
+        bgcolor: "rgb(36, 36, 36)",
+        color: "white",
+      }}
       variant="outlined"
     >
       <CardActionArea>
@@ -61,7 +65,7 @@ export default function Cards({
           avatar={<TerminalSharpIcon />}
           title={title}
           subheader={
-            <Typography sx={{ mb: 1 }} color="white" fontSize="2vw">
+            <Typography sx={{ mb: 1 }} color="white">
               {date}
             </Typography>
           }

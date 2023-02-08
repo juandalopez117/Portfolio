@@ -362,7 +362,7 @@ const Proyectos = () => {
                     title="Anime App"
                     date="January 2023"
                     image={Anime}
-                    generalIdeas="It is a little SPA that sends to a database data from an API called Jikan. It has some features as carousel of cads, searchbar and responsive design. 
+                    generalIdeas="SPA that sends to a database data from an API called Jikan. It has some features as carousel of cads, searchbar and responsive design. 
                      "
                     ListOftechnologies={
                       <List>
